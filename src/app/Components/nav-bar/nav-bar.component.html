@@ -1,16 +1,36 @@
 <nav class="navbar fixed-top navbar-light bg-dark">
   <a class="navbar-brand text-white">
-    <img src="https://dh.virginia.edu/system/files/styles/large/private/bootstrap-stack.png?itok=PwhHCxo1" width="50" height="50" alt="">
+    <img src="../../../assets/Logo.png" width="50" height="50" alt="">
     DevelopGadget
   </a>
-  <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#navbarNav"
+  <div class="dropdown">
+    <button class="btn btn-outline-info dropdown-toggle mr-sm-2" type="button" id="dropdownMenu2" data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">
+      <i class="fas fa-globe"></i>
+      {{this.Idioma}}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item" type="button">Español</button>
+      <button class="dropdown-item" type="button">Ingles</button>
+    </div>
+  </div>
+  <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="collapse" data-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/Inicio']" routerLinkActive="router-link-active"><h3 class="navbar-brand text-white">Inicio</h3></a>
+        <a class="nav-link navbar-brand text-white" [routerLink]="['/Inicio']" routerLinkActive="router-link-active">
+          <i class="fas fa-home"></i>
+          Inicio
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-brand text-white" [routerLink]="['/Apps']" routerLinkActive="router-link-active">
+          <i class="fas fa-mobile-alt"></i>
+          Aplicaciones
+        </a>
       </li>
     </ul>
   </div>
