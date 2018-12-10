@@ -1,4 +1,4 @@
-<app-nav-bar (Ruta)="this.Ruta = $event;"></app-nav-bar>
+<app-nav-bar (Ruta)="this.Cambio($event)"></app-nav-bar>
 <br>
 <br>
 <br>
@@ -8,6 +8,11 @@
       <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif" height="100%" width="100%">
     </div>
   </div>
+  <div class="row align-items-start animated bounceIn" *ngIf="this.Loader">
+    <div class="col">
+      <p>{{this.Textos.Seguir}}</p>
+      <i class="fab fa-github-square fa-3x"></i>
+      <i class="fab fa-linkedin fa-3x"></i>
+    </div>
+  </div>
 </div>
-<br>
-

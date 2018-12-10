@@ -7,6 +7,6 @@ html, body {
   margin: 0;
 }
 
-h4, a {
+h4, a, p, div {
   font-family: 'Courgette', cursive;
 }

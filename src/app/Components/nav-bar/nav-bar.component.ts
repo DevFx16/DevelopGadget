@@ -10,13 +10,13 @@ export class NavBarComponent implements OnInit {
   @Output() Ruta = new EventEmitter();
   Idioma: string = 'ES';
 
-  constructor() { this.Ruta.emit('../Idioma/' + this.Idioma + '.json'); }
+  constructor() { this.Ruta.emit('../../../assets/' + this.Idioma + '.json'); }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  Cambio(Prefijo: string){
+  Cambio(Prefijo: string) {
     this.Idioma = Prefijo;
-    this.Ruta.emit('../Idioma/' + this.Idioma + '.json');
+    this.Ruta.emit('../../../assets/' + this.Idioma + '.json');
   }
 
 }
