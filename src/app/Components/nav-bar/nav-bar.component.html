@@ -10,13 +10,13 @@
       {{this.Idioma}}
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <button class="dropdown-item" type="button">
+      <button class="dropdown-item" type="button" (click)="this.Cambio('ES')">
         <span class="label label-default">
           <span class="flag-icon flag-icon-es"></span>
           Español
         </span>
       </button>
-      <button class="dropdown-item" type="button">
+      <button class="dropdown-item" type="button" (click)="this.Cambio('EN')">
         <span class="label label-default">
           <span class="flag-icon flag-icon-us"></span>
           Ingles

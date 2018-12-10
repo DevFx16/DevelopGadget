@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 
   Loader: boolean = false;
+  Ruta: string = '../Idioma/ES.json';
 
   constructor() { }
 
