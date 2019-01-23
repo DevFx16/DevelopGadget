@@ -3,27 +3,6 @@
     <img src="../../../assets/Logo.png" width="50" height="50" alt="">
     DevelopGadget
   </a>
-  <div class="dropdown">
-    <button class="btn btn-outline-info dropdown-toggle mr-sm-2" type="button" id="dropdownMenu2" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      <i class="fas fa-globe"></i>
-      {{this.Idioma}}
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-      <button class="dropdown-item" type="button" (click)="this.Cambio('ES')">
-        <span class="label label-default">
-          <span class="flag-icon flag-icon-es"></span>
-          Español
-        </span>
-      </button>
-      <button class="dropdown-item" type="button" (click)="this.Cambio('EN')">
-        <span class="label label-default">
-          <span class="flag-icon flag-icon-us"></span>
-          Ingles
-        </span>
-      </button>
-    </div>
-  </div>
   <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="collapse" data-target="#navbarNav"
     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
@@ -41,6 +20,27 @@
           <i class="fas fa-mobile-alt"></i>
           {{this.Textos.Aplicaciones}}
         </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle navbar-brand text-white" href="#" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-globe"></i>
+          {{this.Idioma}}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item" type="button" (click)="this.Cambio('ES')">
+            <span class="label label-default">
+              <span class="flag-icon flag-icon-es"></span>
+              Español
+            </span>
+          </button>
+          <button class="dropdown-item" type="button" (click)="this.Cambio('EN')">
+            <span class="label label-default">
+              <span class="flag-icon flag-icon-us"></span>
+              Ingles
+            </span>
+          </button>
+        </div>
       </li>
     </ul>
   </div>

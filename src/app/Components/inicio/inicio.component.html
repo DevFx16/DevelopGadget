@@ -7,16 +7,16 @@
     </div>
   </div>
   <div class="row animated bounceIn" *ngIf="this.Loader">
-    <div class="row">
-
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RcOrjrMDbgo"></iframe>
     </div>
     <div class="row justify-content-center align-self-start">
       <div class="row justify-content-center align-self-start">
         <p>{{this.Textos.Seguir}}</p>
       </div>
       <div class="row justify-content-center align-self-start">
-        <button type="button" class="btn btn-link col-sm-2 col-md-1" *ngFor="let item of this.Iconos">
-          <img [src]="item" alt="Responsive image" class="img-fluid rounded">
+        <button type="button" class="btn btn-link col-2 col-md-1" *ngFor="let item of this.Iconos">
+          <img [src]="item" class="img-fluid">
         </button>
       </div>
     </div>
