@@ -1,24 +1,30 @@
 <app-nav-bar (Ruta)="this.Cambio($event)"></app-nav-bar>
 <br *ngFor="let item of [1,2,3,4]">
-<div class="container">
+<div class="container-fluid">
   <div class="row justify-content-center align-self-start animated bounceIn" *ngIf="!this.Loader">
     <div class="col-8">
       <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif" height="100%" width="100%">
     </div>
   </div>
   <div class="row animated bounceIn" *ngIf="this.Loader">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RcOrjrMDbgo"></iframe>
-    </div>
-    <div class="row justify-content-center align-self-start">
-      <div class="row justify-content-center align-self-start">
-        <p>{{this.Textos.Seguir}}</p>
+    <div class="col-1"></div>
+    <div class="col-10 align-self-center">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RcOrjrMDbgo"></iframe>
       </div>
-      <div class="row justify-content-center align-self-start">
-        <button type="button" class="btn btn-link col-2 col-md-1" *ngFor="let item of this.Iconos">
-          <img [src]="item" class="img-fluid">
-        </button>
+      <div class="row justify-content-center">
+        <div class="col align-self-center">
+          <div class="row justify-content-center">
+            <p>{{this.Textos.Seguir}}</p>
+          </div>
+          <div class="row justify-content-center">
+            <button type="button" class="btn btn-link" *ngFor="let item of this.Iconos">
+              <img [src]="item" class="img-fluid" width="30" height="30">
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+    <div class="col-1"></div>
   </div>
 </div>
