@@ -1,10 +1,5 @@
 <div class="container-fluid">
-  <div class="row justify-content-center align-self-start animated bounceIn" *ngIf="!this.Loader">
-    <div class="col-8">
-      <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif" height="100%" width="100%">
-    </div>
-  </div>
-  <div class="row animated bounceIn" *ngIf="this.Loader">
+  <div class="row animated lightSpeedIn">
     <div class="col-1"></div>
     <div class="col-10 align-self-center">
       <div class="embed-responsive embed-responsive-16by9">
@@ -62,8 +57,6 @@
           </div>
         </div>
         <div class="col align-self-center">
-          <br>
-          <br>
           <div class="row justify-content-center">
             <img src="https://i.ibb.co/7R5wZJN/edition.png" class="img-fluid" alt="Responsive image">
           </div>
@@ -111,8 +104,8 @@
           </div>
           <br>
           <div class="row justify-content-center">
-            <button type="button" class="btn btn-link" *ngFor="let item of this.Iconos">
-              <img [src]="item" class="img-fluid" width="30" height="30">
+            <button type="button" class="btn btn-link" *ngFor="let item of this.Iconos" (click)="item.Funcion()">
+              <img [src]="item.Img" class="img-fluid" width="40" height="40">
             </button>
           </div>
         </div>
