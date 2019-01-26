@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './Components/inicio/inicio.component';
 import { AppsComponent } from './Components/apps/apps.component';
+
 //Rutas
 const Rutas: Routes = [
   { path: 'Inicio', component: InicioComponent },

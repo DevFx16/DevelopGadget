@@ -1,23 +1,23 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
 
-  Textos: any;
-  Idioma: string = 'ES';
+  Textos: any = JSON.parse(localStorage.getItem('Idioma'));
 
   constructor() {
-    fetch('../../../assets/' + this.Idioma + '.json').then(json => json.json().then(json2 => this.Textos = json2));
   }
 
   ngOnInit() { }
 
   Cambio(Prefijo: string) {
-    this.Idioma = Prefijo;
-    fetch('../../../assets/' + Prefijo + '.json').then(json => json.json().then(json2 => this.Textos = json2));
+    fetch('../../../assets/' + Prefijo + '.json').then(json => json.json().then(json2 => {
+      this.Textos = json2;
+      localStorage.setItem('Idioma', JSON.stringify(this.Textos));
+    }));
   }
 }
