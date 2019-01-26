@@ -4,13 +4,12 @@
   "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod",
+    "start": "node Server.js",
+    "build": "ng build --aot --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "update": "ng update @angular/cli",
-    "postinstall": "ng build --aot -prod"
+    "update": "ng update @angular/cli"
   },
   "private": true,
   "dependencies": {
