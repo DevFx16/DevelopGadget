@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { InicioComponent } from './Components/inicio/inicio.component';
 import { AppsComponent } from './Components/apps/apps.component';
 //Rutas
@@ -16,7 +15,6 @@ const Rutas: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     InicioComponent,
     AppsComponent
   ],

@@ -1,4 +1,3 @@
-<app-nav-bar (Ruta)="this.Cambio($event)"></app-nav-bar>
 <br *ngFor="let item of [1,2,3,4]">
 <div class="container-fluid">
   <div class="row justify-content-center align-self-start animated bounceIn" *ngIf="!this.Loader">
@@ -12,11 +11,106 @@
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RcOrjrMDbgo"></iframe>
       </div>
+      <br>
       <div class="row justify-content-center">
         <div class="col align-self-center">
           <div class="row justify-content-center">
-            <p>{{this.Textos.Seguir}}</p>
+            <div class="col align-self-center">
+              <div class="row justify-content-center">
+                <h1 class="titulo"> {{this.Textos.Acerca}}</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="linea"></div>
+              </div>
+            </div>
           </div>
+          <br>
+          <div class="row justify-content-center">
+            <p>{{this.Textos.TextoA}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col align-self-center">
+            <div class="row justify-content-center">
+              <h1 class="titulo">{{this.Textos.Habilidades}}</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="linea"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col align-self-center">
+          <div class="row justify-content-center">
+            <img src="https://i.ibb.co/tLxyNhg/graphic.png" class="img-fluid" alt="Responsive image">
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <div class="row justify-content-center">
+              <h1 class="titulo">{{this.Textos.Escritorio}}</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="linea"></div>
+            </div>
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <p>Java y C#</p>
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <br>
+          <br>
+          <div class="row justify-content-center">
+            <img src="https://i.ibb.co/7R5wZJN/edition.png" class="img-fluid" alt="Responsive image">
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <div class="row justify-content-center">
+              <h1 class="titulo">{{this.Textos.Web}}</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="linea"></div>
+            </div>
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <p>Angular, AngularJs, React, Bootstrap, Semantic, HTML5, CSS3, .Net Core, NodeJS, JavaScript y Express</p>
+          </div>
+        </div>
+        <div class="col align-self-center">
+          <div class="row justify-content-center">
+            <img src="https://i.ibb.co/bHhhqGT/code.png" class="img-fluid" alt="Responsive image">
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <div class="row justify-content-center">
+              <h1 class="titulo">{{this.Textos.Movil}}</h1>
+            </div>
+            <div class="row justify-content-center">
+              <div class="linea"></div>
+            </div>
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            <p>React Native y Ionic Framework</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col align-self-center">
+          <div class="row justify-content-center">
+            <h1 class="titulo">{{this.Textos.Seguir}}</h1>
+          </div>
+          <div class="row justify-content-center">
+            <div class="linea"></div>
+          </div>
+          <br>
           <div class="row justify-content-center">
             <button type="button" class="btn btn-link" *ngFor="let item of this.Iconos">
               <img [src]="item" class="img-fluid" width="30" height="30">

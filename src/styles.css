@@ -9,7 +9,8 @@ html, body {
 
 h4, a, p, div {
   font-family: 'Gloria Hallelujah', cursive;
-  font-weight: bold;
+	font-weight: bold;
+	text-align: center;
 }
 
 body::-webkit-scrollbar-track
