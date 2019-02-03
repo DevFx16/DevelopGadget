@@ -1,17 +1,21 @@
 <div class="container-fluid">
   <div class="row animated lightSpeedIn">
-    <div class="col-1"></div>
-    <div class="col-10 align-self-center">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RcOrjrMDbgo"></iframe>
+    <div class="col align-self-center">
+      <div class="row justify-content-center">
+        <img src="../../../assets/Logo.png" class="img-fluid animated infinite delay-2s tada" alt="Responsive image">
       </div>
       <br>
       <div class="row justify-content-center">
-        <div class="col align-self-center">
+        <h1 class="titulo animated infinite delay-2s tada">DevelopGadget</h1>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-1"></div>
+        <div class="col-10 align-self-center">
           <div class="row justify-content-center">
             <div class="col align-self-center">
               <div class="row justify-content-center">
-                <h1 class="titulo"> {{this.Textos.Acerca}}</h1>
+                <h1 class="titulo">{{this.Textos.Acerca}}</h1>
               </div>
               <div class="row justify-content-center">
                 <div class="linea"></div>
@@ -23,6 +27,7 @@
             <p>{{this.Textos.TextoA}}</p>
           </div>
         </div>
+        <div class="col-1"></div>
       </div>
       <div class="row justify-content-center">
         <div class="row justify-content-center">
@@ -40,56 +45,61 @@
       <div class="row justify-content-center">
         <div class="col align-self-center">
           <div class="row justify-content-center">
-            <img src="https://i.ibb.co/tLxyNhg/graphic.png" class="img-fluid" alt="Responsive image">
+            <img src="https://i.ibb.co/tLxyNhg/graphic.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
           </div>
           <br>
           <div class="row justify-content-center">
             <div class="row justify-content-center">
-              <h1 class="titulo">{{this.Textos.Escritorio}}</h1>
+              <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Escritorio}}</h1>
             </div>
             <div class="row justify-content-center">
-              <div class="linea"></div>
+              <div class="linea animated infinite delay-2s pulse"></div>
             </div>
           </div>
           <br>
           <div class="row justify-content-center">
-            <p>Java y C#</p>
+            <p class="animated infinite delay-2s pulse">Java y C#</p>
           </div>
         </div>
         <div class="col align-self-center">
           <div class="row justify-content-center">
-            <img src="https://i.ibb.co/7R5wZJN/edition.png" class="img-fluid" alt="Responsive image">
+            <img src="https://i.ibb.co/7R5wZJN/edition.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
           </div>
           <br>
           <div class="row justify-content-center">
-            <div class="row justify-content-center">
-              <h1 class="titulo">{{this.Textos.Web}}</h1>
-            </div>
-            <div class="row justify-content-center">
-              <div class="linea"></div>
+            <div class="col align-self-center">
+              <div class="row justify-content-center">
+                <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Web}}</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="linea animated infinite delay-2s pulse"></div>
+              </div>
             </div>
           </div>
           <br>
           <div class="row justify-content-center">
-            <p>Angular, AngularJs, React, Bootstrap, Semantic, HTML5, CSS3, .Net Core, NodeJS, JavaScript y Express</p>
+            <p class="animated infinite delay-2s pulse ">Angular, AngularJs, React, Bootstrap, Semantic, HTML5, CSS3, .Net
+              Core, NodeJS, JavaScript, Express.</p>
           </div>
         </div>
         <div class="col align-self-center">
           <div class="row justify-content-center">
-            <img src="https://i.ibb.co/bHhhqGT/code.png" class="img-fluid" alt="Responsive image">
+            <img src="https://i.ibb.co/bHhhqGT/code.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
           </div>
           <br>
           <div class="row justify-content-center">
-            <div class="row justify-content-center">
-              <h1 class="titulo">{{this.Textos.Movil}}</h1>
-            </div>
-            <div class="row justify-content-center">
-              <div class="linea"></div>
+            <div class="col align-self-center">
+              <div class="row justify-content-center">
+                <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Movil}}</h1>
+              </div>
+              <div class="row justify-content-center">
+                <div class="linea animated infinite delay-2s pulse"></div>
+              </div>
             </div>
           </div>
           <br>
           <div class="row justify-content-center">
-            <p>React Native y Ionic Framework</p>
+            <p class="animated infinite delay-2s pulse">React Native, Ionic Framework.</p>
           </div>
         </div>
       </div>
@@ -104,13 +114,12 @@
           </div>
           <br>
           <div class="row justify-content-center">
-            <button type="button" class="btn btn-link" *ngFor="let item of this.Iconos" (click)="item.Funcion()">
+            <button type="button" class="btn btn-link animated infinite delay-2s jello" *ngFor="let item of this.Iconos" (click)="item.Funcion()">
               <img [src]="item.Img" class="img-fluid" width="40" height="40">
             </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-1"></div>
   </div>
 </div>
