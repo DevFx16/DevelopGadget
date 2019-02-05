@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DatosService } from './Service/datos.service';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './Components/inicio/inicio.component';
 import { AppsComponent } from './Components/apps/apps.component';
@@ -26,7 +25,7 @@ const Rutas: Routes = [
     HttpClientModule,
     RouterModule.forRoot(Rutas),
   ],
-  providers: [DatosService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
