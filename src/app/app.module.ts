@@ -9,7 +9,7 @@ import { AppsComponent } from './Components/apps/apps.component';
 //Rutas
 const Rutas: Routes = [
   { path: 'Inicio', component: InicioComponent },
-  { path: 'Apps', component: AppComponent },
+  { path: 'Apps', component: AppsComponent },
   { path: '**', redirectTo: 'Inicio' }
 ];
 
