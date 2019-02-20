@@ -14,9 +14,12 @@ export const Query =  {
     'query': `{
         GetApps{
             Id
+            Nombre
             Link
             Logo
             Imagenes
+            DescripcionEs
+            DescripcionEn
         }
     }`
 }

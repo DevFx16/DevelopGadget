@@ -4,7 +4,21 @@
             <img src="https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-    <div class="row animated lightSpeedIn" *ngIf="this.Loader">
-
+    <div class="row animated lightSpeedIn align-items-center justify-content-center" *ngIf="this.Loader">
+        <div class="card mb-3 m-1" style="max-width: 540px;" *ngFor="let item of this.Apps">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                <img [src]="item.Logo" class="card-img" alt="Responsive image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title titulo">{{item.Nombre}}</h5>
+                        <p class="card-text" *ngIf="this.Select === 'EN'">{{item.DescripcionEn}}</p>
+                        <p class="card-text" *ngIf="this.Select === 'ES'">{{item.DescripcionEs}}</p>
+                        <button type="button" class="btn btn-primary">{{this.Textos.Boton}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

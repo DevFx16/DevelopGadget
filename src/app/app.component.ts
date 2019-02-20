@@ -13,13 +13,14 @@ export class AppComponent{
   constructor() {
   }
 
-  ngOnInit() { }
+  ngOnInit() {localStorage.setItem('Select', this.Idioma);}
 
   Cambio(Prefijo: string) {
     this.Idioma = Prefijo;
     fetch('../../../assets/' + Prefijo + '.json').then(json => json.json().then(json2 => {
       this.Textos = json2;
       localStorage.setItem('Idioma', JSON.stringify(this.Textos));
+      localStorage.setItem('Select', this.Idioma);
     }));
   }
 }

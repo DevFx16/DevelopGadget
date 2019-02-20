@@ -10,17 +10,22 @@ export class AppsComponent implements OnInit, DoCheck {
 
   Loader: boolean = false;
   Textos: any = JSON.parse(localStorage.getItem('Idioma'));
+  Apps: App[];
+  Select: String = localStorage.getItem('Select');
 
   constructor(private Http: HttpClient) { }
 
   async ngOnInit() {
+    console.log(this.Select);
     await this.Http.post('http://developgadget-backend.herokuapp.com/App', Query).toPromise().then(apps => {
-      console.log(apps);
+      this.Apps = (apps as any).data.GetApps as App[];
+      console.log(this.Apps);
       this.Loader = true;
-    })
+    });
   }
 
   ngDoCheck() {
     this.Textos = JSON.parse(localStorage.getItem('Idioma'));
+    this.Select = localStorage.getItem('Select');
   }
 }
