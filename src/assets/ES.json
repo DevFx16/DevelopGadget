@@ -8,5 +8,7 @@
   "Escritorio": "Desarrollo de Escritorio",
   "Web": "Desarrollo Web",
   "Movil": "Desarrollo Móvil",
-  "Boton": "Ir"
+  "Boton": "Ir",
+  "Descargar": "Descargar",
+  "CerrarBtn": "Cerrar"
 }

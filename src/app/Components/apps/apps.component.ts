@@ -12,6 +12,15 @@ export class AppsComponent implements OnInit, DoCheck {
   Textos: any = JSON.parse(localStorage.getItem('Idioma'));
   Apps: App[];
   Select: String = localStorage.getItem('Select');
+  App: App = {
+    Id: '',
+    Nombre: '',
+    DescripcionEn: '',
+    DescripcionEs: '',
+    Imagenes: [],
+    Link: '',
+    Logo: ''
+  };
 
   constructor(private Http: HttpClient) { }
 
@@ -28,4 +37,9 @@ export class AppsComponent implements OnInit, DoCheck {
     this.Textos = JSON.parse(localStorage.getItem('Idioma'));
     this.Select = localStorage.getItem('Select');
   }
+
+  Ruta(){
+    window.open(this.App.Link, '_blank')
+  }
+
 }
