@@ -13,7 +13,7 @@ export class App {
 export const Query =  {
     'query': `{
         GetApps{
-            Id
+            _id
             Nombre
             Link
             Logo

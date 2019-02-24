@@ -1,38 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
 }
 
 h4, a, p, div {
-  font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Gloria Hallelujah', cursive;
 	font-weight: bold;
 	text-align: center;
 }
 
-body::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
 	background-color: #F5F5F5;
 	border-radius: 10px;
 }
 
-body::-webkit-scrollbar
-{
+body::-webkit-scrollbar {
 	width: 10px;
 	background-color: #F5F5F5;
 }
 
-body::-webkit-scrollbar-thumb
-{
+body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background-color: #FFF;
-	background-image: -webkit-linear-gradient(top,
-											  #e4f5fc 0%,
-											  #bfe8f9 50%,
-											  #9fd8ef 51%,
-											  #2ab0ed 100%);
+	background-image: -webkit-linear-gradient(top, #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%);
+}
+
+.infinite {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }

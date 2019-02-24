@@ -42,35 +42,15 @@
         </div>
       </div>
       <br>
-      <div class="row justify-content-center">
-        <div class="col align-self-center">
+      <div class="row justify-content-center" id="css-table">
+        <div class="col align-self-center" *ngFor="let item of this.Habilidades">
           <div class="row justify-content-center">
-            <img src="https://i.ibb.co/tLxyNhg/graphic.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            <div class="row justify-content-center">
-              <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Escritorio}}</h1>
-            </div>
-            <div class="row justify-content-center">
-              <div class="linea animated infinite delay-2s pulse"></div>
-            </div>
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            <p class="animated infinite delay-2s pulse">Java, C#.</p>
-          </div>
-        </div>
-        <div class="col align-self-center">
-          <div class="row justify-content-center">
-            <img src="https://i.ibb.co/7R5wZJN/edition.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
+            <img [src]="item.Img" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
           </div>
           <br>
           <div class="row justify-content-center">
             <div class="col align-self-center">
-              <div class="row justify-content-center">
-                <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Web}}</h1>
-              </div>
+              <h1 class="titulo animated infinite delay-2s pulse">{{item.Title}}</h1>
               <div class="row justify-content-center">
                 <div class="linea animated infinite delay-2s pulse"></div>
               </div>
@@ -78,28 +58,9 @@
           </div>
           <br>
           <div class="row justify-content-center">
-            <p class="animated infinite delay-2s pulse ">Angular, AngularJs, React, Bootstrap, Semantic, HTML5, CSS3, .Net
-              Core, NodeJS, JavaScript, Express, Dart.</p>
-          </div>
-        </div>
-        <div class="col align-self-center">
-          <div class="row justify-content-center">
-            <img src="https://i.ibb.co/bHhhqGT/code.png" class="img-fluid animated infinite delay-2s pulse" alt="Responsive image">
-          </div>
-          <br>
-          <div class="row justify-content-center">
             <div class="col align-self-center">
-              <div class="row justify-content-center">
-                <h1 class="titulo animated infinite delay-2s pulse">{{this.Textos.Movil}}</h1>
-              </div>
-              <div class="row justify-content-center">
-                <div class="linea animated infinite delay-2s pulse"></div>
-              </div>
+              <p class="animated infinite delay-2s pulse">{{item.Hab}}</p>
             </div>
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            <p class="animated infinite delay-2s pulse">React Native, Ionic Framework, Flutter.</p>
           </div>
         </div>
       </div>

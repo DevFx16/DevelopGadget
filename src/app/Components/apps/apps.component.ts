@@ -25,7 +25,6 @@ export class AppsComponent implements OnInit, DoCheck {
   constructor(private Http: HttpClient) { }
 
   async ngOnInit() {
-    console.log(this.Select);
     await this.Http.post('http://developgadget-backend.herokuapp.com/App', Query).toPromise().then(apps => {
       this.Apps = (apps as any).data.GetApps as App[];
       console.log(this.Apps);
