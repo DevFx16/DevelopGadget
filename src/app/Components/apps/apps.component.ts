@@ -1,5 +1,5 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Query, App } from '../../Model/App.model';
 @Component({
   selector: 'app-apps',
@@ -25,9 +25,10 @@ export class AppsComponent implements OnInit, DoCheck {
   constructor(private Http: HttpClient) { }
 
   async ngOnInit() {
-    await this.Http.post('http://developgadget-backend.herokuapp.com/App', Query).toPromise().then(apps => {
+    let headers = new HttpHeaders({ 'Content-Type': 'application/json', 'mode': 'cors'});
+    let options = { headers: headers }
+    await this.Http.post('https://developgadget-backend.herokuapp.com/App', Query, options).toPromise().then(apps => {
       this.Apps = (apps as any).data.GetApps as App[];
-      console.log(this.Apps);
       this.Loader = true;
     });
   }
