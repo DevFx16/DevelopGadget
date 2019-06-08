@@ -5,11 +5,11 @@
         </div>
     </div>
     <div class="row animated lightSpeedIn align-items-center justify-content-center" *ngIf="this.Loader">
-        <div class="card mb-3 m-1 animated infinite pulse border-light" style="max-width: 18rem;" *ngFor="let item of this.Apps">
+        <div class="card mb-3 m-2 animated infinite pulse border-light" style="max-width: 18rem;" *ngFor="let item of this.Apps">
             <div class="card-header">
                 {{item.Nombre}}
             </div>
-            <img [src]="item.Logo" class="card-img-top" alt="img-thumbnail">
+            <img [src]="item.Logo" class="card-img-top" alt="img-thumbnail" style="height: 250px; width: 250px;">
             <div class="card-footer">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal" (click)="this.App = item"><i class="fas fa-eye"></i>{{this.Textos.Boton}}</button>
             </div>
