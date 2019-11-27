@@ -1,0 +1,135 @@
+<div class="row justify-content-center animated slideInRight
+ w-100 mr-0 ml-0 mx-0" style="height: 100%">
+    <div class="col" style="height: 100%">
+        <div class="row justify-content-center mx-0">
+            <div class="col-12 col-md-9 col-xl-7 align-self-center pt-2">
+                <div class="card text-center shadow" style="height: 100%">
+                    <div class="card-header gradient" style="height: 140px;">
+                    </div>
+                    <div class="card-body">
+                        <div class="row w-100 justify-content-center mr-0 ml-0">
+                            <div class="card-block card-img-profile">
+                                <img class="img-fluid" src="../../assets/logo.png" alt="card image"
+                                    alt="Imagen proyecto">
+                            </div>
+                        </div>
+                        <h4 class="card-title title animated zoomIn">DevelopGadget</h4>
+                        <p class="card-content content pt-1 animated zoomIn">Desarrollador Full-Stack JavaScript</p>
+                        <div class="row justify-content-center animated zoomInDown">
+                            <button class="btn bg-transparent btn-social px-0 py-0"
+                                (click)="this.redirect('https://github.com/DevelopGadget')">
+                                <img class="img-fluid" src="../../assets/github-logo.png" alt="card image"
+                                    alt="Imagen proyecto">
+                            </button>
+                            <div class="px-1"></div>
+                            <button class="btn bg-transparent btn-social px-0 py-0"
+                                (click)="this.redirect('https://www.linkedin.com/in/fernando-jos%C3%A9-araujo-figueroa-138ab1158')">
+                                <img class="img-fluid" src="../../assets/linkedin.png" alt="card image"
+                                    alt="Imagen proyecto">
+                            </button>
+                            <div class="px-1"></div>
+                            <button class="btn bg-transparent btn-social px-0 py-0"
+                                (click)="this.redirect('https://www.facebook.com/DevelopGadget-110981330273065/')">
+                                <img class="img-fluid" src="../../assets/facebook.png" alt="card image"
+                                    alt="Imagen proyecto">
+                            </button>
+                            <div class="px-1"></div>
+                            <button class="btn bg-transparent btn-social px-0 py-0">
+                                <img class="img-fluid" src="../../assets/gmail.png" alt="card image"
+                                    alt="Imagen proyecto">
+                            </button>
+                            <div class="px-1"></div>
+                            <button class="btn bg-transparent btn-social px-0 py-0"
+                                (click)="this.redirect('https://play.google.com/store/apps/developer?id=Fernando+Araujo')">
+                                <img class="img-fluid" src="../../assets/iconfinder_gogleplay_519195.png"
+                                    alt="card image" alt="Imagen proyecto">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center py-5 animated zoomInLeft delay-3s">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-10">
+                    <div class="row justify-content-center">
+                        <p class="text-center titleop my-0">Acerca de Mí</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="line text-center"></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <p class="content my-2" style="font-size: 20px;">Mi nombre es Fernando Araujo soy desarrollador
+                            de software dispuesto a aprender y
+                            me gusta todo lo relacionado con este mundo, ademas con desempeño sobresaliente, con buenas
+                            relaciones laborales, trabajo bien tanto solo como en equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center py-5 w-100 animated zoomIn delay-5s">
+            <div class="row justify-content-center align-items-center w-100">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <p class="text-center titleop my-0">Habilidades</p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="line text-center"></div>
+                    </div>
+                    <div class="row justify-content-between mt-2 w-100 mx-0
+                    ">
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <img src="../../assets/code.png" class="img-fluid" alt="Movil" width="130" height="130">
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="text-center titleop my-0">Movíl</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="line text-center"></div>
+                            </div>
+                            <div class="row justify-content-center my-2">
+                                <h4 *ngFor="let item of BadgesMovil"><a href="#"
+                                        class="badge badge-info mx-2">{{item.Badge}}</a></h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <img src="../../assets/graphic.png" class="img-fluid" alt="Movil" width="130"
+                                    height="130">
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="row justify-content-center">
+                                    <p class="text-center titleop my-0">Escritorio</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="line text-center"></div>
+                            </div>
+                            <div class="row justify-content-center my-2">
+                                <h4 *ngFor="let item of BadgesDesktop"><a href="#"
+                                        class="badge badge-info mx-2">{{item.Badge}}</a></h4>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row justify-content-center">
+                                <img src="../../assets/edition.png" class="img-fluid" alt="Movil" width="130"
+                                    height="130">
+                            </div>
+                            <div class="row justify-content-center">
+                                <p class="text-center titleop my-0">Web</p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="line text-center"></div>
+                            </div>
+                            <div class="row justify-content-center my-2">
+                                    <h4 *ngFor="let item of BadgesWeb"><a href="#"
+                                            class="badge badge-info mx-2">{{item.Badge}}</a></h4>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

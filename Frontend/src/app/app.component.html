@@ -1,0 +1,21 @@
+<div class="container-fluid d-flex h-100 flex-column px-0 mx-0" style="margin-top: 106px;">
+  <!-- I want this container to stretch to the height of the parent -->
+  <div class="row mx-0">
+    <div class="col">
+      <nav class="navbar navbar-toggleable-md fixed-top text-uppercase bg-transparent justify-content-between">
+        <a class="navbar-brand text-white mr-0" [routerLink]="['/home']" routerLinkActive="active">
+          <img src="../assets/logo.png" width="80" height="80" class="d-inline-block align-center mr-1" alt="">
+        </a>
+        <a [routerLink]="[ '/apps' ]" routerLinkActive="active" class="btn bg-transparent">
+          <img src="../assets/project.png" width="50" height="50" alt="">
+        </a>
+      </nav>
+    </div>
+  </div>
+  <div class="row fill d-flex mx-0">
+    <!-- I want this row height to filled the remaining height -->
+    <div class="col portlet-container portlet-dropzone">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

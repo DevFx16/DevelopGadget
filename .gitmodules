@@ -1,0 +1,3 @@
+[submodule "DevelopGadget-Backend-Node"]
+	path = DevelopGadget-Backend-Node
+	url = https://github.com/DevelopGadget/DevelopGadget-Backend-Node
