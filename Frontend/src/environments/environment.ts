@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: 'https://developgadget-backend.herokuapp.com/App',
+  query: {
+    'query': `{
+      GetApps{
+          _id
+          Nombre
+          Link
+          Logo
+          Imagenes
+          DescripcionEs
+          DescripcionEn
+      }
+    }`
+  }
 };
 
 /*
