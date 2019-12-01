@@ -22,8 +22,8 @@ export class AppviewComponent implements OnInit, OnDestroy {
     this.Subs = this.apps.getApps().subscribe(data => {
       this.Apps.next(data);
       this.Loading.next(false);
+      this.carousel('.carousel');
     });
-    this.carousel('.carousel');
   }
 
   ngOnDestroy(): void {
