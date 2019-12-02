@@ -6,9 +6,16 @@
         <a class="navbar-brand text-white mr-0" [routerLink]="['/home']" routerLinkActive="active">
           <img src="../assets/logo.png" width="80" height="80" class="d-inline-block align-center mr-1" alt="">
         </a>
-        <a [routerLink]="[ '/apps' ]" routerLinkActive="active" class="btn bg-transparent">
-          <img src="../assets/project.png" width="50" height="50" alt="">
-        </a>
+        <div class="row">
+          <a [routerLink]="[ '/apps' ]" routerLinkActive="active" class="btn bg-transparent">
+            <img src="../assets/project.png" width="40" height="40" alt="">
+          </a>
+          <div class="px-2"></div>
+          <select #select (change)="translate.use(select.value)" class="selectpicker bg-transparent pr-1" data-width="fit">
+            <option value="en" data-content='<img src="../assets/united-states.png" width="35" height="35">'>USA</option>
+            <option value="es" selected data-content='<img src="../assets/spain.png" width="35" height="35">'>SPAIN</option>
+        </select>
+        </div>
       </nav>
     </div>
   </div>

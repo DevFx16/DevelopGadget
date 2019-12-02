@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  api: 'https://developgadget-backend.herokuapp.com/App',
+  api: '/graphql',
   query: {
     'query': `{
       GetApps{

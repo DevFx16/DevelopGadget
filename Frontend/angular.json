@@ -30,6 +30,7 @@
             "styles": [
               "src/styles.sass",
               "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-select/dist/css/bootstrap-select.css",
               "node_modules/izitoast/dist/css/iziToast.min.css",
               "node_modules/animate.css/animate.min.css"
             ],
@@ -37,7 +38,8 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/izitoast/dist/js/iziToast.min.js"
+              "node_modules/izitoast/dist/js/iziToast.min.js",
+              "node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"
             ]
           },
           "configurations": {

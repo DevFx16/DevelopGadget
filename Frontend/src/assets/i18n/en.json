@@ -1,0 +1,13 @@
+{
+    "home": {
+        "description": "Full-Stack JavaScript Developer",
+        "about": "About Me",
+        "content": "My name is Fernando Araujo I am a developer of software willing to learn and I like everything related to this world, also with outstanding performance, with good labor relations, I work well both alone and in a team.",
+        "skills": "Skills",
+        "col": "{{name}}"
+    },
+    "app": {
+        "app": "{{description}}",
+        "button": "Go"
+    }
+}

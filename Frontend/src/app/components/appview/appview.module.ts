@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AppviewRoutingModule } from './appview-routing.module';
 import { AppviewComponent } from './appview.component';
 import { AppService } from 'src/app/services/app.service';
-import { HttpClientModule } from '@angular/common/http';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     AppviewRoutingModule,
-    HttpClientModule
+    TranslateModule
   ],
   providers: [AppService]
 })

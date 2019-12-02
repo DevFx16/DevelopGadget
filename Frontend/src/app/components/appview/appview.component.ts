@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, BehaviorSubject, Subscription } from 'rxjs';
 import { AppService } from 'src/app/services/app.service';
 import { App } from 'src/app/models/app.model';
+import { TranslateService } from '@ngx-translate/core';
 
 declare var $: any;
 @Component({
@@ -16,7 +17,7 @@ export class AppviewComponent implements OnInit, OnDestroy {
   AppSelect: Subject<App> = new BehaviorSubject({_id: '', Nombre: '', Logo: '', Link: '', DescripcionEs: '', DescripcionEn: '', Imagenes: []});
   Subs: Subscription;
 
-  constructor(private apps: AppService) { }
+  constructor(private apps: AppService, private translate: TranslateService) { }
 
   ngOnInit() {
     this.Subs = this.apps.getApps().subscribe(data => {
@@ -45,5 +46,10 @@ export class AppviewComponent implements OnInit, OnDestroy {
       $(id).carousel('next');
     }, 2000);
   }
+
+  appDes(app: App): string {
+    return this.translate.currentLang === 'en' ? app.DescripcionEn : app.DescripcionEs;
+  }
+
 
 }

@@ -1,0 +1,13 @@
+{
+    "home": {
+        "description": "Desarrollador Full-Stack JavaScript",
+        "about": "Acerca de Mí",
+        "content": "Mi nombre es Fernando Araujo soy desarrollador de software dispuesto a aprender, me gusta todo lo relacionado con este mundo, ademas con desempeño sobresaliente, con buenas, relaciones laborales, trabajo bien tanto solo como en equipo.",
+        "skills": "Habilidades",
+        "col": "{{name}}"
+    },
+    "app": {
+        "app": "{{description}}",
+        "button": "Ir"
+    }
+}

@@ -11,7 +11,7 @@
                         <div class="card shadow h-100" style="height: 100%;">
                             <div class="card-header p-0" style="height: 140px;" (click)="showModal(app)"
                                 style="cursor: pointer;">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div [id]="app._id" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">
                                         <div class="carousel-item" *ngFor="let item of app.Imagenes; let index = index"
                                             [ngClass]="{'active': index === 0}">
@@ -30,12 +30,13 @@
                                     <h6 class="card-title titleop animated zoomIn ml-3" style="font-size: 25px;">
                                         {{app.Nombre}}</h6>
                                     <p class="card-content content my-1 pt-1 animated zoomIn" style="font-size: 15px;">
-                                        {{app.DescripcionEs}}</p>
+                                        {{ 'app.app' | translate: {description: appDes(app)} }}</p>
                                 </div>
                             </div>
                             <div class="card-footer">
                                 <div class="row justify-content-center">
-                                    <a class="btn btn-outline-primary" [href]="app.Link" target="_blank">Ver</a>
+                                    <a class="btn btn-outline-primary" [href]="app.Link"
+                                        target="_blank">{{'app.button' | translate}}</a>
                                 </div>
                             </div>
                         </div>
