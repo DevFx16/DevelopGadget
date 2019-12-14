@@ -36,8 +36,9 @@ export class HomeComponent implements OnInit {
     { Image: '../../assets/github-logo.png', Link: 'https://github.com/DevelopGadget' },
     { Image: '../../assets/linkedin.png', Link: 'https://www.linkedin.com/in/fernando-jos%C3%A9-araujo-figueroa-138ab1158' },
     { Image: '../../assets/facebook.png', Link: 'https://www.facebook.com/DevelopGadget-110981330273065/' },
-    { Image: '../../assets/gmail.png', Link: '' },
-    { Image: '../../assets/iconfinder_gogleplay_519195.png', Link: 'https://play.google.com/store/apps/developer?id=Fernando+Araujo' }
+    { Image: '../../assets/gmail.png', Link: 'mailto:developgadget@gmail.com' },
+    { Image: '../../assets/iconfinder_gogleplay_519195.png', Link: 'https://play.google.com/store/apps/developer?id=Fernando+Araujo' },
+    { Image: '../../assets/youtube.png', Link: 'https://www.youtube.com/channel/UCAu2-R1M1P3sZoDXQzNjhVQ' }
   ];
 
   Columns: Array<any> = [
